@@ -24,27 +24,93 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "color-dark": "#131318",
+              "color-orange": "#FF4240",
+              "color-gray": "#13131899",
             },
           },
         },
       };
     </script>
     <style>
-        /* google font Manrope */
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-        body {
-            font-family: 'Manrope', sans-serif;
-        }
-        @media screen and (max-width: 640px) {
+      /* google font Manrope */
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+      @media screen and (max-width: 640px) {
         html {
           font-size: 3.5vw;
         }
       }
-      </style>
+    </style>
   </head>
   <body>
-    <header>
-        
+    <header class="w-10/12 container mx-auto">
+      <nav class="navbar bg-base-100 my-6 md:my-8 px-0">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden pl-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247]"
+            >
+              <li><a class="text-color-orange font-bold">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+              <li>
+                <a>
+                  <i class="fa-solid fa-magnifying-glass text-[#89898B]"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="" class="text-color-dark text-3xl md:text-4xl font-extrabold"
+            >Hockey<span class="text-color-orange">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[#424247]">
+            <li><a class="text-color-orange font-bold">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i
+            class="fa-solid fa-magnifying-glass text-[#89898B] text-2xl mr-6 hidden lg:inline-block"
+          ></i>
+          <a
+            class="btn h-auto text-white bg-color-orange text-lg font-bold md:px-6 md:py-4"
+            >Get Ticket</a
+          >
+        </div>
+      </nav>
     </header>
+
+    <main class="w-10/12 container mx-auto"></main>
   </body>
 </html>
