@@ -43,6 +43,11 @@
           font-size: 3.5vw;
         }
       }
+      @media screen and (min-width: 1024px) {
+        #footer-grid-container {
+          grid-template-columns: 3fr 2fr 2fr 2fr;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1259,5 +1264,63 @@
         </div>
       </section>
     </main>
+
+    <footer class="bg-color-dark">
+      <div class="w-10/12 container mx-auto py-10 md:py-24">
+        <div
+          class="text-center lg:text-left text-[#FFFFFF99] font-medium grid gap-10 grid-cols-2"
+          id="footer-grid-container"
+        >
+          <div class="col-span-2 lg:col-span-1">
+            <h2 class="text-white text-2xl lg:text-[1.75rem] font-extrabold">
+              Get In Touch
+            </h2>
+            <p class="md:leading-[1.625rem] mt-4 mb-5 md:mb-6">
+              Skate into greatness with our hockey community. Explore gear,
+              tips, and updates for an unparalleled experience.
+            </p>
+            <ul class="space-y-3 text-[#FFFFFFCC]">
+              <li>
+                <i class="fa-regular fa-envelope text-color-orange mr-4"></i>
+                hockeys@support.com
+              </li>
+              <li>
+                <i class="fa-solid fa-phone text-color-orange mr-4"></i>
+                (+62) 123-321-543
+              </li>
+            </ul>
+          </div>
+          <div class="justify-self-end lg:justify-self-end">
+            <h3 class="text-white text-lg font-bold">Company</h3>
+            <ul class="mt-7 space-y-3">
+              <li><a href="">About us</a></li>
+              <li><a href="">Leadership</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">News & Articles</a></li>
+              <li><a href="">Legal Notice</a></li>
+            </ul>
+          </div>
+          <div class="justify-self-start lg:justify-self-end">
+            <h3 class="text-white text-lg font-bold">Support</h3>
+            <ul class="mt-7 space-y-3">
+              <li><a href="">Help Center</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Ticket Support</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-span-2 lg:col-span-1 lg:justify-self-end">
+            <h3 class="text-white text-lg font-bold">Services</h3>
+            <ul class="mt-7 space-y-3">
+              <li><a href="">Academy</a></li>
+              <li><a href="">Group Lesson</a></li>
+              <li><a href="">Private Lesson</a></li>
+              <li><a href="">Hockeys for kids</a></li>
+              <li><a href="">Hockeys for Adult</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
